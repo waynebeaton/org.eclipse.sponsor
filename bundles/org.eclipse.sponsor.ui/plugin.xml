@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.views">
+      <category
+            name="Eclipse Foundation"
+            id="ef">
+      </category>
+      <view
+            id="org.eclipse.sponsor.views.SponsorView"
+            name="Sponsor"
+            icon="icons/eclipse_foundation_16.png"
+            class="org.eclipse.sponsor.views.SponsorViewSwt"
+            category="ef"
+            inject="true">
+      </view>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+      <perspectiveExtension
+            targetID="org.eclipse.jdt.ui.JavaPerspective">
+         <view
+               id="org.eclipse.sponsor.views.SponsorView"
+               relative="org.eclipse.ui.views.ProblemView"
+               relationship="stack">
+         </view>
+      </perspectiveExtension>
+   </extension>
+   <extension
+         point="org.eclipse.ui.startup">
+      <startup
+            class="org.eclipse.sponsor.bundle.Startup">
+      </startup>
+   </extension>
+
+</plugin>

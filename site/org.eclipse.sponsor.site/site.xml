@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/org.eclipse.sponsor.feature_1.0.0.202306131744.jar" id="org.eclipse.sponsor.feature" version="1.0.0.202306131744"/>
+</site>
