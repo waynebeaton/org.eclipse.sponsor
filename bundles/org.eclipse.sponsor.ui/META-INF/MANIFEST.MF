@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: Eclipse Foundation Donate
+Bundle-Name: Eclipse Foundation Donate UI
 Bundle-SymbolicName: org.eclipse.sponsor.ui;singleton:=true
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: org.eclipse.sponsor.bundle.Activator
