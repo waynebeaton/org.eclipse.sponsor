@@ -49,6 +49,8 @@ public class SponsorViewSwt extends ViewPart {
 	@Inject
 	Shell shell;
 
+	private Button button;
+
 	@Override
 	public void createPartControl(Composite parent) {
 		parent.setLayout(new GridLayout());
@@ -76,7 +78,7 @@ public class SponsorViewSwt extends ViewPart {
 
 		addBackgroundImage(styledText);
 
-		Button button = new Button(styledText, SWT.PUSH);
+		button = new Button(styledText, SWT.PUSH);
 		button.setText("Sponsor");
 		int offset = text.indexOf('\uFFFC');
 		addControl(styledText, button, offset);
@@ -141,6 +143,6 @@ public class SponsorViewSwt extends ViewPart {
 
 	@Override
 	public void setFocus() {
-		
+		button.setFocus();
 	}
 }
